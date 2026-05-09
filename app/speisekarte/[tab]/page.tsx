@@ -7,7 +7,7 @@ import MenuSection, { type TabId } from "@/components/MenuSection";
 
 const VALID_TABS: TabId[] = ["baukasten", "empfehlungen", "davor-danach", "getraenke"];
 
-const CITY = "Deiner Stadt"; // TODO: Ersetze mit echtem Stadtname, z.B. "Bremen"
+const CITY = "Bielefeld";
 
 const TAB_META: Record<
   TabId,

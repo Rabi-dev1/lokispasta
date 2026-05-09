@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import Contact from "@/components/Contact";
 
-const CITY = "Deiner Stadt"; // TODO: Ersetze mit echtem Stadtname
+const CITY = "Bielefeld";
 
 export const metadata: Metadata = {
   title: `Kontakt & Anfahrt | Loki's Pasta – Pasta Restaurant in ${CITY}`,

@@ -47,8 +47,7 @@ export default function Hero() {
         >
           Authentische Pasta
           <br />
-          {/* TODO: Ersetze "[Ihre Stadt]" mit dem echten Stadtnamen, z.B. "in Bremen" */}
-          <span className="italic text-gold">in [Ihre Stadt]</span>
+          <span className="italic text-gold">in Bielefeld</span>
         </motion.h1>
 
         <motion.p

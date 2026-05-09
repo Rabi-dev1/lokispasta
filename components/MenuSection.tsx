@@ -148,57 +148,57 @@ function EmpfehlungenTab() {
       number: 1,
       ingredients: "Bolognese + Parmesan + Getränk nach Wahl",
       price: "11,50",
-      image: "/images/food-takeout-pasta.jpg",
-      imageAlt: "Loki's Pasta Menü 1 – Fettuccine Alfredo mit Bolognese und Parmesan",
+      image: "/images/menu-1-bolognese.jpg",
+      imageAlt: "Loki's Pasta Menü 1 – Hausgemachte Fettuccine Alfredo mit Bolognese und frischem Parmesan in Bielefeld",
     },
     {
       number: 2,
       ingredients: "Cherry-Tomaten + Mini Mozzarella + Rucola + Pinienkerne + Parmesan + Getränk nach Wahl",
       price: "13,50",
-      image: "/images/pasta-bowls.jpg",
-      imageAlt: "Loki's Pasta Menü 2 – Fettuccine mit Cherry-Tomaten, Mini Mozzarella und Rucola",
+      image: "/images/menu-2-cherry-mozzarella.jpg",
+      imageAlt: "Loki's Pasta Menü 2 – Fettuccine mit Cherry-Tomaten, Mini Mozzarella, Rucola und Pinienkerne bei Loki's Pasta Bielefeld",
     },
     {
       number: 3,
       ingredients: "Pesto + Mini Mozzarella + getrocknete Tomaten + Pinienkerne + Parmesan + Getränk nach Wahl",
       price: "14,00",
-      image: "/images/pasta-bowls.jpg",
-      imageAlt: "Loki's Pasta Menü 3 – Fettuccine mit Pesto, Mini Mozzarella und getrockneten Tomaten",
+      image: "/images/menu-3-pesto-mozzarella.jpg",
+      imageAlt: "Loki's Pasta Menü 3 – Fettuccine mit Basilikum-Pesto, Mini Mozzarella und getrockneten Tomaten in Bielefeld",
     },
     {
       number: 4,
       ingredients: "Gebratene Hähnchen + Sahnesoße + Parmesan + Getränk nach Wahl",
       price: "11,50",
-      image: "/images/food-takeout-pasta.jpg",
-      imageAlt: "Loki's Pasta Menü 4 – Fettuccine mit gebratenem Hähnchen und Sahnesoße",
+      image: "/images/menu-4-chicken-cream.jpg",
+      imageAlt: "Loki's Pasta Menü 4 – Fettuccine mit gebratenem Hähnchen in cremiger Sahnesoße bei Loki's Pasta",
     },
     {
       number: 5,
       ingredients: "Lachs + Sahnesoße + Spinat + Knoblauch + Parmesan + Getränk nach Wahl",
       price: "13,00",
-      image: "/images/pasta-bowls.jpg",
-      imageAlt: "Loki's Pasta Menü 5 – Fettuccine mit Lachs, Spinat und Sahnesoße",
+      image: "/images/menu-5-lachs-spinat.jpg",
+      imageAlt: "Loki's Pasta Menü 5 – Hausgemachte Fettuccine mit Lachs, frischem Spinat und Sahnesoße in Bielefeld",
     },
     {
       number: 6,
       ingredients: "Gebratene Garnelen + Cherry Tomaten + Knoblauch + Parmesan + Getränk nach Wahl",
       price: "13,00",
-      image: "/images/pasta-bowls.jpg",
-      imageAlt: "Loki's Pasta Menü 6 – Fettuccine mit gebratenen Garnelen und Cherry Tomaten",
+      image: "/images/menu-6-garnelen.jpg",
+      imageAlt: "Loki's Pasta Menü 6 – Fettuccine mit gebratenen Garnelen, Cherry Tomaten und Knoblauch bei Loki's Pasta Bielefeld",
     },
     {
       number: 7,
       ingredients: "Gebratene Hähnchen + Gebratene Champignons + Curry-Sahnesoße + Parmesan + Getränk nach Wahl",
       price: "12,50",
-      image: "/images/food-takeout-pasta.jpg",
-      imageAlt: "Loki's Pasta Menü 7 – Fettuccine mit Hähnchen, Champignons und Curry-Sahnesoße",
+      image: "/images/menu-7-chicken-curry.jpg",
+      imageAlt: "Loki's Pasta Menü 7 – Fettuccine mit Hähnchen, Champignons und würziger Curry-Sahnesoße in Bielefeld",
     },
     {
       number: 8,
       ingredients: "Cheddar + Mais + Jalapeños + Röstzwiebeln + Parmesan + Getränk nach Wahl",
       price: "12,50",
-      image: "/images/pasta-bowls.jpg",
-      imageAlt: "Loki's Pasta Menü 8 – Fettuccine mit Cheddar, Mais und Jalapeños",
+      image: "/images/menu-8-cheddar-mais.jpg",
+      imageAlt: "Loki's Pasta Menü 8 – Fettuccine mit Cheddar, Mais, Jalapeños und Röstzwiebeln bei Loki's Pasta Bielefeld",
     },
   ];
 
@@ -342,22 +342,22 @@ export default function MenuSection({ defaultTab = "baukasten" }: { defaultTab?:
         </div>
 
         {/* Animated Tab Switcher */}
-        <div className="flex flex-wrap gap-2 justify-center mb-10">
+        <div className="flex flex-wrap gap-2 justify-center mb-10 bg-white/70 backdrop-blur-sm border border-cream-dark rounded-2xl p-2 w-fit mx-auto shadow-sm">
           {TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => handleTabChange(tab.id)}
-              className="relative px-4 sm:px-6 py-2.5 text-sm font-medium rounded-full transition-colors duration-200 font-body"
-              style={{
-                color: activeTab === tab.id ? "#FAF7F2" : "#2C1A0E",
-                background: activeTab === tab.id ? "transparent" : "rgba(44,26,14,0.08)",
-              }}
+              className={`relative px-5 sm:px-7 py-2.5 text-sm font-medium rounded-xl transition-all duration-200 font-body whitespace-nowrap ${
+                activeTab === tab.id
+                  ? "text-cream shadow-md"
+                  : "text-wood hover:text-sage hover:bg-sage/10"
+              }`}
               aria-current={activeTab === tab.id ? "page" : undefined}
             >
               {activeTab === tab.id && (
                 <motion.span
                   layoutId="activeTab"
-                  className="absolute inset-0 bg-sage rounded-full"
+                  className="absolute inset-0 bg-sage rounded-xl"
                   transition={{ type: "spring", stiffness: 400, damping: 35 }}
                 />
               )}

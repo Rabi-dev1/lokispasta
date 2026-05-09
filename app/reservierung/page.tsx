@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import Reservation from "@/components/Reservation";
 
-const CITY = "Deiner Stadt"; // TODO: Ersetze mit echtem Stadtname
+const CITY = "Bielefeld";
 
 export const metadata: Metadata = {
   title: `Tisch reservieren | Loki's Pasta – Handgemachte Pasta in ${CITY}`,

@@ -3,7 +3,7 @@ import Link from "next/link";
 // TODO: Fülle die echten Kontaktdaten ein
 const RESTAURANT_NAME = "Loki's Pasta";
 const STREET = "Musterstraße 1"; // echte Straße + Hausnummer
-const ZIP_CITY = "12345 Musterstadt"; // echte PLZ + Stadt
+const ZIP_CITY = "33602 Bielefeld"; // echte PLZ + Stadt – bitte noch Straße eintragen
 const PHONE = "+49 (0) 123 456789"; // echte Telefonnummer
 const EMAIL = "info@lokispasta.de";
 

@@ -47,7 +47,8 @@ export default function Hero() {
         >
           Authentische Pasta
           <br />
-          <span className="italic text-gold">im Herzen der Stadt</span>
+          {/* TODO: Ersetze "[Ihre Stadt]" mit dem echten Stadtnamen, z.B. "in Bremen" */}
+          <span className="italic text-gold">in [Ihre Stadt]</span>
         </motion.h1>
 
         <motion.p
@@ -67,13 +68,13 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a
-            href="#reservierung"
+            href="/reservierung"
             className="bg-terracotta hover:bg-terracotta-light text-cream px-8 py-4 rounded-full font-semibold text-base tracking-wide transition-all duration-200 hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto text-center"
           >
             Tisch reservieren
           </a>
           <a
-            href="#menu"
+            href="/speisekarte/baukasten"
             className="border-2 border-cream/60 hover:border-gold text-cream hover:text-gold px-8 py-4 rounded-full font-semibold text-base tracking-wide transition-all duration-200 w-full sm:w-auto text-center"
           >
             Zur Speisekarte

@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+// TODO: Fülle die echten Kontaktdaten ein
+const RESTAURANT_NAME = "Loki's Pasta";
+const STREET = "Musterstraße 1"; // echte Straße + Hausnummer
+const ZIP_CITY = "12345 Musterstadt"; // echte PLZ + Stadt
+const PHONE = "+49 (0) 123 456789"; // echte Telefonnummer
+const EMAIL = "info@lokispasta.de";
+
 export default function Footer() {
   return (
     <footer className="bg-wood-light border-t border-cream/10">
@@ -71,6 +78,27 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* Contact Address – plain text for Google Local SEO */}
+          <div>
+            <h3 className="text-cream font-semibold text-sm uppercase tracking-widest mb-4 font-body">
+              Adresse
+            </h3>
+            <address className="not-italic text-cream/60 text-sm font-body space-y-1 leading-relaxed">
+              <strong className="text-cream font-semibold">{RESTAURANT_NAME}</strong>
+              <br />
+              <span>{STREET}</span>
+              <br />
+              <span>{ZIP_CITY}</span>
+              <br />
+              <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-gold transition-colors block mt-2">
+                {PHONE}
+              </a>
+              <a href={`mailto:${EMAIL}`} className="hover:text-gold transition-colors block">
+                {EMAIL}
+              </a>
+            </address>
           </div>
 
           {/* Legal */}

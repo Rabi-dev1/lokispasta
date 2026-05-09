@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import PageTransition from "@/components/PageTransition";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -102,7 +103,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+          <PageTransition>{children}</PageTransition>
+        </body>
     </html>
   );
 }

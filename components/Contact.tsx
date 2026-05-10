@@ -153,7 +153,7 @@ export default function Contact() {
             className="rounded-2xl overflow-hidden border border-cream/10 h-80 sm:h-96 lg:h-full min-h-[400px]"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.3576289523826!2d13.40495!3d52.520008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzEyLjAiTiAxM8KwMjQnMTcuOCJF!5e0!3m2!1sde!2sde!4v1620000000000!5m2!1sde!2sde"
+              src="https://maps.google.com/maps?q=Herforderstra%C3%9Fe+12%2C+33602+Bielefeld&output=embed&hl=de"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg)" }}

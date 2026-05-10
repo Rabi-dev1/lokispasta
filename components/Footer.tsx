@@ -1,11 +1,9 @@
 import Link from "next/link";
 
-// TODO: Fülle die echten Kontaktdaten ein
 const RESTAURANT_NAME = "Loki's Pasta";
-const STREET = "Musterstraße 1"; // echte Straße + Hausnummer
-const ZIP_CITY = "33602 Bielefeld"; // echte PLZ + Stadt – bitte noch Straße eintragen
-const PHONE = "+49 (0) 123 456789"; // echte Telefonnummer
-const EMAIL = "info@lokispasta.de";
+const STREET = "Herforderstraße 12";
+const ZIP_CITY = "33602 Bielefeld";
+const EMAIL = "bielefeld@lokispasta.de";
 
 export default function Footer() {
   return (
@@ -24,7 +22,9 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/lokis.pasta/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full bg-cream/10 hover:bg-terracotta flex items-center justify-center transition-colors"
               >
@@ -51,12 +51,12 @@ export default function Footer() {
             </h3>
             <div className="space-y-2">
               <div className="flex justify-between text-sm font-body">
-                <span className="text-cream/60">Mo – Fr</span>
-                <span className="text-cream">11:00 – 21:00</span>
+                <span className="text-cream/60">Mo – Sa</span>
+                <span className="text-cream">12:00 – 21:00</span>
               </div>
               <div className="flex justify-between text-sm font-body">
-                <span className="text-cream/60">Sa & So</span>
-                <span className="text-cream">12:00 – 21:00</span>
+                <span className="text-cream/60">So</span>
+                <span className="text-cream">Geschlossen</span>
               </div>
             </div>
 
@@ -92,10 +92,7 @@ export default function Footer() {
               <br />
               <span>{ZIP_CITY}</span>
               <br />
-              <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-gold transition-colors block mt-2">
-                {PHONE}
-              </a>
-              <a href={`mailto:${EMAIL}`} className="hover:text-gold transition-colors block">
+              <a href={`mailto:${EMAIL}`} className="hover:text-gold transition-colors block mt-2">
                 {EMAIL}
               </a>
             </address>

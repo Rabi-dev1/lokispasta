@@ -238,11 +238,14 @@ function DavorDanachTab() {
       </div>
 
       <div className="bg-cream rounded-2xl overflow-hidden border border-cream-dark hover:shadow-lg transition-shadow">
-        <div className="h-56 bg-gradient-to-br from-wood-light to-wood flex items-center justify-center">
-          <div className="text-center px-6">
-            <p className="text-6xl mb-3">🍮</p>
-            <p className="font-display text-cream italic text-xl">Tiramisu</p>
-          </div>
+        <div className="relative h-56">
+          <Image
+            src="/images/tiramisu.jpg"
+            alt="Klassisches Tiramisu bei Loki's Pasta Bielefeld"
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
         </div>
         <div className="p-6">
           <h2 className="font-display text-xl font-semibold text-wood">Tiramisu</h2>

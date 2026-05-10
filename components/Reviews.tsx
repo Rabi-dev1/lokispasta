@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const reviews = [
   {
-    name: "Maximilian R.",
+    name: "NicxDggd",
     rating: 5,
-    text: "Die beste Pasta, die ich in der Stadt gegessen habe! Der Baukasten ist eine geniale Idee – ich komme jetzt jede Woche. Die Qualität ist einfach unschlagbar.",
-    date: "April 2026",
-    initial: "M",
-  },
-  {
-    name: "Sophie K.",
-    rating: 5,
-    text: "Endlich ein Restaurant, das frisch kocht! Man schmeckt sofort, dass die Pasta wirklich handgemacht ist. Menü 3 mit Pesto ist mein absoluter Favorit!",
-    date: "März 2026",
-    initial: "S",
-  },
-  {
-    name: "Jonas W.",
-    rating: 5,
-    text: "Das Knoblauchbrot ist ein Traum. Aber die Lachs-Pasta mit Spinat ist nochmal eine Klasse für sich. Freundliches Personal, faire Preise – ich bin begeistert!",
+    text: "Es war wirklich wow. Die Pasta war frisch, die Soße war perfekt und das Personal super freundlich. Definitiv eines der besten Restaurants in Bielefeld!",
     date: "Mai 2026",
-    initial: "J",
+    initial: "N",
+  },
+  {
+    name: "David Schiwietz",
+    rating: 5,
+    text: "Super frische, hausgemachte Nudeln – man schmeckt sofort den Unterschied zu normaler Pasta. Der Baukasten ist eine geniale Idee. Ich komme auf jeden Fall wieder!",
+    date: "April 2026",
+    initial: "D",
+  },
+  {
+    name: "Kadir",
+    rating: 5,
+    text: "Es war unglaublich lecker. Die Portionen sind großzügig und die Qualität einfach top. Kann ich jedem empfehlen, der echte Pasta liebt!",
+    date: "März 2026",
+    initial: "K",
   },
 ];
 

@@ -9,8 +9,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/restaurant-ambiance.jpg"
-          alt="Loki's Pasta Restaurant Atmosphäre"
+          src="/images/storefront.jpg"
+          alt="Loki's Pasta Restaurant Außenansicht Bielefeld"
           fill
           priority
           className="object-cover object-center"

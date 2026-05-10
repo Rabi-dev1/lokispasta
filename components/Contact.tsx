@@ -5,8 +5,7 @@ import Image from "next/image";
 
 export default function Contact() {
   const hours = [
-    { days: "Montag – Freitag", time: "11:00 – 21:00 Uhr" },
-    { days: "Samstag & Sonntag", time: "12:00 – 21:00 Uhr" },
+    { days: "Montag – Samstag", time: "12:00 – 21:00 Uhr" },
   ];
 
   return (
@@ -77,8 +76,8 @@ export default function Contact() {
                     <p className="text-cream font-body text-sm font-medium">
                       Loki&apos;s Pasta
                       <br />
-                      Musterstraße 1<br />
-                      12345 Musterstadt
+                      Herforderstraße 12<br />
+                      33602 Bielefeld
                     </p>
                   </div>
                 </div>
@@ -104,9 +103,7 @@ export default function Contact() {
                       Kontakt
                     </p>
                     <p className="text-cream font-body text-sm font-medium">
-                      +49 (0) 123 456789
-                      <br />
-                      info@lokispasta.de
+                      bielefeld@lokispasta.de
                     </p>
                   </div>
                 </div>

@@ -125,19 +125,41 @@ export default function Footer() {
             Handgemachte Pasta Fresca – Pasta Baukasten – Lokales italienisches Restaurant
           </p>
         </div>
-        <div className="mt-4 text-center">
-          <p className="font-body" style={{ fontSize: "0.75rem", color: "rgba(250,247,242,0.35)" }}>
-            made by{" "}
-            <a
-              href="https://www.kundenpilot.site/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "rgba(250,247,242,0.55)" }}
-              className="hover:text-gold transition-colors underline underline-offset-2"
+        <div className="mt-6 pb-2 text-center">
+          <a
+            href="https://www.kundenpilot.site/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-1.5 font-body transition-all duration-300"
+            style={{ textDecoration: "none" }}
+          >
+            <span style={{ fontSize: "0.72rem", color: "rgba(250,247,242,0.35)", letterSpacing: "0.04em" }}>
+              Website by
+            </span>
+            <span
+              className="group-hover:text-gold transition-colors duration-300"
+              style={{
+                fontSize: "0.82rem",
+                fontWeight: 600,
+                color: "rgba(250,247,242,0.7)",
+                letterSpacing: "0.03em",
+                borderBottom: "1px solid rgba(250,247,242,0.2)",
+                paddingBottom: "1px",
+              }}
             >
-              KundenPilot.site
-            </a>
-          </p>
+              KundenPilot
+            </span>
+            <svg
+              className="w-3 h-3 transition-all duration-300 group-hover:text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              style={{ color: "rgba(250,247,242,0.35)" }}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -125,6 +125,20 @@ export default function Footer() {
             Handgemachte Pasta Fresca – Pasta Baukasten – Lokales italienisches Restaurant
           </p>
         </div>
+        <div className="mt-4 text-center">
+          <p className="font-body" style={{ fontSize: "0.75rem", color: "rgba(250,247,242,0.35)" }}>
+            made by{" "}
+            <a
+              href="https://www.kundenpilot.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "rgba(250,247,242,0.55)" }}
+              className="hover:text-gold transition-colors underline underline-offset-2"
+            >
+              KundenPilot.site
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
